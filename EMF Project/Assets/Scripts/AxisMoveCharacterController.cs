@@ -21,12 +21,11 @@ public class AxisMoveCharacterController : MonoBehaviour
 			moveDirection *= speed;
 		}
 
-		//Apply gravity
+		// Apply gravity
 		moveDirection.y -= gravity * Time.deltaTime;
 
 		// Move the controller
 		characterController.Move(moveDirection*Time.deltaTime);
 	}
 
-	
 }

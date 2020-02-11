@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Moveable
+  - HeavyMagnet
+  - LightMagnet
   layers:
   - Default
   - TransparentFX
