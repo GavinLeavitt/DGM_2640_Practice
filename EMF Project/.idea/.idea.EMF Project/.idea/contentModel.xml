@@ -13,6 +13,7 @@
           </e>
           <e p="Player Scripts" t="Include">
             <e p="CharacterControllerPushRigidbody.cs" t="Include" />
+            <e p="MagnetAim.cs" t="Include" />
             <e p="Player States" t="Include">
               <e p="AxisMoveState.cs" t="Include" />
               <e p="MoveInDirectionState.cs" t="Include" />
