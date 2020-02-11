@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\10673768\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -7,16 +7,22 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="AxisMoveCharacterController.cs" t="Include" />
-          <e p="CharacterControllerPushRigidbody.cs" t="Include" />
           <e p="Finite State Machines" t="Include">
             <e p="IState.cs" t="Include" />
-            <e p="MoveAxisState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>
-          <e p="RayCast.cs" t="Include" />
+          <e p="Player Scripts" t="Include">
+            <e p="CharacterControllerPushRigidbody.cs" t="Include" />
+            <e p="Player States" t="Include">
+              <e p="AxisMoveState.cs" t="Include" />
+              <e p="MoveInDirectionState.cs" t="Include" />
+            </e>
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+          <e p="RayCastMagnet.cs" t="Include" />
           <e p="RotateTransform.cs" t="Include" />
           <e p="Scriptable Objects" t="Include">
+            <e p="BoolData.cs" t="Include" />
             <e p="PositionData.cs" t="Include" />
           </e>
         </e>

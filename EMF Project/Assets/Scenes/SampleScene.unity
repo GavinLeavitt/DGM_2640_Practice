@@ -3080,12 +3080,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 611171105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420019f5dd4d6f841ac3a180852a33b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 940b7625efc0dce4d8f4cc9e65ec67fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 611171111}
   speed: 5
   gravity: 20
+  moveDirection: {x: 0, y: 0, z: 0}
+  magnetize: 0
+  magnetAim: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
 --- !u!143 &611171111
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4165,8 +4168,9 @@ GameObject:
   - component: {fileID: 894747287}
   - component: {fileID: 894747289}
   - component: {fileID: 894747288}
+  - component: {fileID: 894747290}
   m_Layer: 0
-  m_Name: PullMagnet
+  m_Name: PushMagnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4231,6 +4235,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894747286}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &894747290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894747286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15834df80e797b044b72c337895014e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 611171110}
+  aimRotation: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
+  activateKey: f
+  electricCharge: -1
 --- !u!1 &905011314
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,7 +5014,7 @@ GameObject:
   - component: {fileID: 1112398422}
   m_Layer: 0
   m_Name: Truck (1)
-  m_TagString: Untagged
+  m_TagString: HeavyMagnet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5418,7 +5438,7 @@ GameObject:
   - component: {fileID: 1147867550}
   - component: {fileID: 1147867551}
   m_Layer: 0
-  m_Name: PullAim
+  m_Name: PushAim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5452,8 +5472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformToRotate: {fileID: 1147867550}
-  cwKey: v
-  ccwKey: c
+  cwKey: x
+  ccwKey: z
 --- !u!1 &1153633382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5815,7 +5835,7 @@ GameObject:
   - component: {fileID: 1257601722}
   - component: {fileID: 1257601723}
   m_Layer: 0
-  m_Name: PushAim
+  m_Name: PullAim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5849,8 +5869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformToRotate: {fileID: 1257601722}
-  cwKey: x
-  ccwKey: z
+  cwKey: v
+  ccwKey: c
 --- !u!1 &1280798264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,9 +6583,8 @@ GameObject:
   - component: {fileID: 1355543369}
   - component: {fileID: 1355543368}
   - component: {fileID: 1355543370}
-  - component: {fileID: 1355543367}
   m_Layer: 0
-  m_Name: PushMagnet
+  m_Name: PullMagnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6585,24 +6604,6 @@ Transform:
   m_Father: {fileID: 1257601722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &1355543367
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355543365}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1.0000004
-  m_Radius: 0.500001
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1355543368
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6660,8 +6661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15834df80e797b044b72c337895014e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 611171111}
+  player: {fileID: 611171110}
   aimRotation: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
+  activateKey: g
+  electricCharge: 1
 --- !u!1 &1360600895
 GameObject:
   m_ObjectHideFlags: 0
