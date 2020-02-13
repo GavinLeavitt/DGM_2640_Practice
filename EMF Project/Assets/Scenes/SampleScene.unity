@@ -2987,6 +2987,7 @@ GameObject:
   - component: {fileID: 611171106}
   - component: {fileID: 611171111}
   - component: {fileID: 611171110}
+  - component: {fileID: 611171113}
   - component: {fileID: 611171112}
   m_Layer: 0
   m_Name: Player
@@ -3089,6 +3090,9 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   magnetize: 0
   magnetAim: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
+  magnetSwitch: {fileID: 0}
+  leftMagnet: {fileID: 0}
+  rightMagnet: {fileID: 0}
 --- !u!143 &611171111
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3120,6 +3124,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushSpeed: 2
+--- !u!114 &611171113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611171105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455a9d3412031534782e5182ae48e210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformData: {fileID: 11400000, guid: 47f29549d13e1e747b3c8ad2a7c4d5ce, type: 2}
+  rotateSpeed: 2
 --- !u!1 &629005905
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,7 +5454,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147867550}
-  - component: {fileID: 1147867551}
   m_Layer: 0
   m_Name: PushAim
   m_TagString: Untagged
@@ -5459,21 +5476,6 @@ Transform:
   m_Father: {fileID: 611171109}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1147867551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147867549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 455a9d3412031534782e5182ae48e210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformToRotate: {fileID: 1147867550}
-  cwKey: x
-  ccwKey: z
 --- !u!1 &1153633382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,7 +5835,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257601722}
-  - component: {fileID: 1257601723}
   m_Layer: 0
   m_Name: PullAim
   m_TagString: Untagged
@@ -5856,21 +5857,6 @@ Transform:
   m_Father: {fileID: 611171109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1257601723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257601721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 455a9d3412031534782e5182ae48e210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformToRotate: {fileID: 1257601722}
-  cwKey: v
-  ccwKey: c
 --- !u!1 &1280798264
 GameObject:
   m_ObjectHideFlags: 0

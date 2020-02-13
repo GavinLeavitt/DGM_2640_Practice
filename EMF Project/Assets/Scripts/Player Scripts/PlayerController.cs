@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float gravity = 20.0f;
     public Vector3 moveDirection = Vector3.zero;
     public bool magnetize = false;
-    public PositionData magnetAim;
     public StateMachine stateMachine = new StateMachine();
 
     private void Start()
@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(magnetize);
         stateMachine.Update();
     }
 }
