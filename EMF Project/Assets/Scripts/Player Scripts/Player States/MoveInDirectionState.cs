@@ -18,10 +18,9 @@ public class MoveInDirectionState : IState
 
     public void Execute()
     {
-        var moveDirection = owner.magnetAim.positionVector;
-        moveDirection *= owner.speed;
-        owner.characterController.Move(moveDirection * Time.deltaTime);
-        if (!owner.magnetize)
+        owner.moveDirection = new Vector3(0f, owner.magnetRotationObj.positionVector.y, 0f);
+        owner.characterController.Move(owner.moveDirection*Time.deltaTime);
+        if (!owner.magnetizeObj.thisBool)
         {
             owner.stateMachine.ChangeState(new AxisMoveState(owner));
         }

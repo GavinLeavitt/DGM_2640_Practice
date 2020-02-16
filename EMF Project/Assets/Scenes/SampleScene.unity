@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964128, b: 0.57481843, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657952, g: 0.49641305, b: 0.5748189, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,7 +2439,7 @@ Transform:
   m_LocalScale: {x: 1.2705996, y: 1.2705996, z: 1.2705996}
   m_Children: []
   m_Father: {fileID: 611171109}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 48.296, y: 0, z: 0}
 --- !u!1 &561961566
 GameObject:
@@ -2986,9 +2986,8 @@ GameObject:
   - component: {fileID: 611171107}
   - component: {fileID: 611171106}
   - component: {fileID: 611171111}
-  - component: {fileID: 611171110}
-  - component: {fileID: 611171113}
   - component: {fileID: 611171112}
+  - component: {fileID: 611171110}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3066,9 +3065,9 @@ Transform:
   m_LocalPosition: {x: -0.78, y: 1.36, z: -1.46}
   m_LocalScale: {x: 0.78703, y: 0.78703, z: 0.78703}
   m_Children:
-  - {fileID: 1257601722}
   - {fileID: 534669905}
   - {fileID: 1147867550}
+  - {fileID: 1257601722}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3081,18 +3080,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 611171105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 940b7625efc0dce4d8f4cc9e65ec67fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ae6bb3700b7f20468fb411c9b6df987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 611171111}
-  speed: 5
-  gravity: 20
-  moveDirection: {x: 0, y: 0, z: 0}
-  magnetize: 0
-  magnetAim: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
-  magnetSwitch: {fileID: 0}
-  leftMagnet: {fileID: 0}
-  rightMagnet: {fileID: 0}
+  pullMagnet: {fileID: 1257601722}
+  pushMagnet: {fileID: 1147867550}
+  activeRotation: {fileID: 11400000, guid: c58db3d1934422445ab97cfe1625de20, type: 2}
+  playerMagnetize: {fileID: 11400000, guid: d8f04c2d096f40648b7d3f9e248709c9, type: 2}
+  activeTransform: {fileID: 0}
 --- !u!143 &611171111
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3120,24 +3115,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 611171105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d414e6e321123794b8d17ba40e14b5c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 940b7625efc0dce4d8f4cc9e65ec67fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushSpeed: 2
---- !u!114 &611171113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611171105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 455a9d3412031534782e5182ae48e210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformData: {fileID: 11400000, guid: 47f29549d13e1e747b3c8ad2a7c4d5ce, type: 2}
-  rotateSpeed: 2
+  characterController: {fileID: 611171111}
+  speed: 5
+  gravity: 20
+  moveDirection: {x: 0, y: 0, z: 0}
+  magnetRotationObj: {fileID: 11400000, guid: c58db3d1934422445ab97cfe1625de20, type: 2}
+  magnetizeObj: {fileID: 11400000, guid: d8f04c2d096f40648b7d3f9e248709c9, type: 2}
 --- !u!1 &629005905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,7 +4172,6 @@ GameObject:
   - component: {fileID: 894747287}
   - component: {fileID: 894747289}
   - component: {fileID: 894747288}
-  - component: {fileID: 894747290}
   m_Layer: 0
   m_Name: PushMagnet
   m_TagString: Untagged
@@ -4253,22 +4238,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894747286}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &894747290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894747286}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15834df80e797b044b72c337895014e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 611171110}
-  aimRotation: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
-  activateKey: f
-  electricCharge: -1
 --- !u!1 &905011314
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,7 +5443,7 @@ Transform:
   m_Children:
   - {fileID: 894747287}
   m_Father: {fileID: 611171109}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1153633382
 GameObject:
@@ -5855,7 +5824,7 @@ Transform:
   m_Children:
   - {fileID: 1355543366}
   m_Father: {fileID: 611171109}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1280798264
 GameObject:
@@ -6568,7 +6537,6 @@ GameObject:
   - component: {fileID: 1355543366}
   - component: {fileID: 1355543369}
   - component: {fileID: 1355543368}
-  - component: {fileID: 1355543370}
   m_Layer: 0
   m_Name: PullMagnet
   m_TagString: Untagged
@@ -6635,22 +6603,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355543365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1355543370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355543365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15834df80e797b044b72c337895014e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 611171110}
-  aimRotation: {fileID: 11400000, guid: 65471a81fc4f2814e99b614d4484bb0d, type: 2}
-  activateKey: g
-  electricCharge: 1
 --- !u!1 &1360600895
 GameObject:
   m_ObjectHideFlags: 0

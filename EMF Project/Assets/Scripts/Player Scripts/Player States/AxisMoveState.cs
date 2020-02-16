@@ -30,7 +30,7 @@ public class AxisMoveState : IState
 		// Move the controller
 		owner.characterController.Move(owner.moveDirection*Time.deltaTime);
 
-		if (owner.magnetize)
+		if (owner.magnetizeObj.thisBool)
 		{
 			owner.stateMachine.ChangeState(new MoveInDirectionState(owner));
 		}

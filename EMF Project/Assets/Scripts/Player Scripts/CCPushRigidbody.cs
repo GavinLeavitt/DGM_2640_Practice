@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterControllerPushRigidbody : MonoBehaviour {
+public class CCPushRigidbody : MonoBehaviour {
 	public float pushSpeed = 2.0f;
 	// Push moveable blocks while Character Controller is moving
 	void OnControllerColliderHit(ControllerColliderHit hit)
