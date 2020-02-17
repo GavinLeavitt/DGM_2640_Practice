@@ -2986,6 +2986,7 @@ GameObject:
   - component: {fileID: 611171107}
   - component: {fileID: 611171106}
   - component: {fileID: 611171111}
+  - component: {fileID: 611171113}
   - component: {fileID: 611171112}
   - component: {fileID: 611171110}
   m_Layer: 0
@@ -3124,6 +3125,19 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   magnetRotationObj: {fileID: 11400000, guid: c58db3d1934422445ab97cfe1625de20, type: 2}
   magnetizeObj: {fileID: 11400000, guid: d8f04c2d096f40648b7d3f9e248709c9, type: 2}
+--- !u!114 &611171113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611171105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d414e6e321123794b8d17ba40e14b5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSpeed: 2
 --- !u!1 &629005905
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class MagnetManager : MonoBehaviour
     public BoolData playerMagnetize;
     public Transform activeTransform;
 
-    private void Awake()
+    private void Start()
     {
         activeTransform = pullMagnet;
     }
@@ -48,44 +48,40 @@ public class MagnetManager : MonoBehaviour
         }
 
         // Raycast from direction of magnet on mouse input
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
-            Debug.DrawRay(pushMagnet.position, pushMagnet.TransformDirection(Vector3.forward) * 15, Color.blue);
-            RaycastHit pushHit;
-            if (Physics.Raycast(pushMagnet.position, pushMagnet.TransformDirection(Vector3.forward), out pushHit, 15f))
-            {
-                if (pushHit.collider.CompareTag("HeavyMagnet"))
-                {
-                    activeRotation.positionVector.y = pushMagnet.rotation.y;
-                    playerMagnetize.thisBool = true;
-                } else 
-                {
-                    playerMagnetize.thisBool = false;
-                }
-            }
-        } else 
+            MagnetRayCast(pullMagnet, 1f, 8f, Color.red);
+        } 
+        else if (Input.GetMouseButton(0))
+        {
+            MagnetRayCast(pushMagnet, -1f, 8f, Color.blue);
+        } 
+        else 
         {
             playerMagnetize.thisBool = false;
         }
 
-        if (Input.GetMouseButton(1))
-        {
-            Debug.DrawRay(pullMagnet.position, pullMagnet.TransformDirection(Vector3.forward) * 15, Color.red);
-            RaycastHit pullHit;
-            if (Physics.Raycast(pullMagnet.position, pullMagnet.TransformDirection(Vector3.forward), out pullHit, 15f))
+    }
+
+    private void MagnetRayCast(Transform originMagnet, float polarity, float distance, Color debugRayColor)
+    {
+        Debug.DrawRay(originMagnet.position, originMagnet.TransformDirection(Vector3.forward) * distance, debugRayColor);
+        RaycastHit hit;
+            if (Physics.Raycast(originMagnet.position, originMagnet.TransformDirection(Vector3.forward), out hit, distance))
             {
-                if (pullHit.collider.CompareTag("HeavyMagnet"))
+                if (hit.collider.CompareTag("HeavyMagnet"))
                 {
-                    activeRotation.positionVector.y = pullMagnet.rotation.y;
+                    Debug.Log("Hit" + hit.collider);
+                    activeRotation.positionVector = originMagnet.TransformDirection(0f, 0f, polarity);
+                    Debug.Log(activeRotation.positionVector);
                     playerMagnetize.thisBool = true;
                 } else 
                 {
                     playerMagnetize.thisBool = false;
                 }
+            } else
+            {
+                playerMagnetize.thisBool = false;
             }
-        } else 
-        {
-            playerMagnetize.thisBool = false;
-        }
     }
 }
