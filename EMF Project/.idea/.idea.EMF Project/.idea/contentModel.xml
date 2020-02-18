@@ -13,20 +13,16 @@
           </e>
           <e p="MagnetManager.cs" t="Include" />
           <e p="Player Scripts" t="Include">
-            <e p="CharacterControllerPushRigidbody.cs" t="Include" />
-            <e p="MagnetAim.cs" t="Include" />
+            <e p="CCPushRigidbody.cs" t="Include" />
             <e p="Player States" t="Include">
               <e p="AxisMoveState.cs" t="Include" />
               <e p="MoveInDirectionState.cs" t="Include" />
             </e>
             <e p="PlayerController.cs" t="Include" />
           </e>
-          <e p="RayCastMagnet.cs" t="Include" />
-          <e p="RotateTransform.cs" t="Include" />
           <e p="Scriptable Objects" t="Include">
             <e p="BoolData.cs" t="Include" />
             <e p="PositionData.cs" t="Include" />
-            <e p="TransformData.cs" t="Include" />
           </e>
         </e>
       </e>

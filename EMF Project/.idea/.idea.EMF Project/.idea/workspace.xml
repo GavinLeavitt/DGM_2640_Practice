@@ -17,12 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PositionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/91/f90fd582/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/TransformData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateTransform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RayCastMagnet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/MagnetAim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -37,13 +32,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Finite State Machines/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/AxisMoveState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RayCast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RayCastMagnet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/MagnetAim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/TransformData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" />
       </list>
     </option>
   </component>
@@ -97,6 +93,7 @@
       <workItem from="1581435588598" duration="5587000" />
       <workItem from="1581444877815" duration="8541000" />
       <workItem from="1581617552095" duration="7631000" />
+      <workItem from="1582043565534" duration="1757000" />
     </task>
     <servers />
   </component>

@@ -33,9 +33,9 @@ public class MagnetManager : MonoBehaviour
         // Point magnet towards mouse position
         if (activeTransform != null) 
         {
-            Vector3 mouseWorld = -Vector3.one;
-            Plane plane = new Plane (Vector3.up, activeTransform.position);
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            var mouseWorld = -Vector3.one;
+            var plane = new Plane (Vector3.up, activeTransform.position);
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             float distanceToPlane;
 
             if (plane.Raycast (ray, out distanceToPlane))
@@ -43,7 +43,7 @@ public class MagnetManager : MonoBehaviour
                 mouseWorld = ray.GetPoint(distanceToPlane);
             }
 
-            Vector3 forward = mouseWorld - activeTransform.position;
+            var forward = mouseWorld - activeTransform.position;
             activeTransform.rotation = Quaternion.LookRotation(forward, Vector3.up);
         }
 
@@ -75,7 +75,10 @@ public class MagnetManager : MonoBehaviour
                     activeRotation.positionVector = originMagnet.TransformDirection(0f, 0f, polarity);
                     Debug.Log(activeRotation.positionVector);
                     playerMagnetize.thisBool = true;
-                } else 
+                } else if (hit.collider.CompareTag("LightMagnet"))
+                {
+                    // Move smaller object towards player
+                } else
                 {
                     playerMagnetize.thisBool = false;
                 }
