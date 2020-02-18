@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="ElevatorBehaviour.cs" t="Include" />
           <e p="Finite State Machines" t="Include">
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
@@ -19,6 +20,11 @@
               <e p="MoveInDirectionState.cs" t="Include" />
             </e>
             <e p="PlayerController.cs" t="Include" />
+          </e>
+          <e p="RigidbodyPlayer" t="Include">
+            <e p="RBAxisMoveState.cs" t="Include" />
+            <e p="RBMoveInDirectionState.cs" t="Include" />
+            <e p="RBPlayerController.cs" t="Include" />
           </e>
           <e p="Scriptable Objects" t="Include">
             <e p="BoolData.cs" t="Include" />
