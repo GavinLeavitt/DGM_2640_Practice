@@ -13,7 +13,7 @@ public class ElevatorBehaviour : MonoBehaviour
 
     private void Start()
     {
-        destinationArray = GetComponent<Transform[]>();
+        //destinationArray = GetComponent<Transform[]>();
         rigidbodyObj = GetComponent<Rigidbody>();
     }
 

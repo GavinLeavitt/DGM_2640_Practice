@@ -14,21 +14,17 @@ public class RBAxisMoveState : IState
 	public void Enter()
 	{
 		Debug.Log("entering move state");
+		owner.playerBody.useGravity = true;
 	}
 
 	public void Execute()
 	{
-		if (owner.playerBody.isGrounded) {
-			// Get direction from input axes if grounded
-			owner.moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-			owner.moveDirection *= owner.speed;
-		}
-
-		// Apply gravity
-		owner.moveDirection.y -= owner.gravity * Time.deltaTime;
+		// Get direction from input axes
+		owner.moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+		owner.moveDirection *= owner.speed;
 
 		// Move the controller
-		owner.playerBody.MovePosition(owner.moveDirection*Time.deltaTime);
+		owner.playerBody.MovePosition(owner.playerBody.position + owner.moveDirection*Time.deltaTime);
 
 		if (owner.magnetizeObj.thisBool)
 		{

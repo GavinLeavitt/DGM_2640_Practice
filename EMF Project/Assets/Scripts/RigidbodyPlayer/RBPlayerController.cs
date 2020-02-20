@@ -16,8 +16,6 @@ public class RBPlayerController : MonoBehaviour
 
     private void Start()
     {
-        // Get distance to ground
-        var distToGround = playerBody.transform.position.y;
         stateMachine.ChangeState(new RBAxisMoveState(this));
     }
 

@@ -14,12 +14,13 @@ public class RBMoveInDirectionState : IState
     public void Enter()
     {
         Debug.Log("entering move in direction state");
+        owner.playerBody.useGravity = false;
     }
 
     public void Execute()
     {
         owner.moveDirection = owner.magnetRotationObj.positionVector;
-        owner.characterController.Move(Time.deltaTime*owner.speed*owner.moveDirection);
+        owner.playerBody.MovePosition(owner.playerBody.position + Time.deltaTime*owner.speed*owner.moveDirection);
         if (!owner.magnetizeObj.thisBool)
         {
             owner.stateMachine.ChangeState(new RBAxisMoveState(owner));
