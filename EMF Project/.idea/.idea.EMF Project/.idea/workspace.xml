@@ -12,23 +12,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/ad/f97a6e6c/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElevatorBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/AxisMoveState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/IState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBAxisMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBMoveInDirectionState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/ab/e9821339/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PositionData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElevatorBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/be/37707973/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/f1/5e1717ed/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/c7/3983af28/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,7 +43,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateTransform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/PlayerController1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RigidPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/AxisMoveState1.cs" />
@@ -57,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBAxisMoveState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBMoveInDirectionState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" />
       </list>
     </option>
   </component>
@@ -115,6 +110,7 @@
       <workItem from="1582050767334" duration="7848000" />
       <workItem from="1582224442801" duration="3400000" />
       <workItem from="1582234486608" duration="982000" />
+      <workItem from="1582657924032" duration="2474000" />
     </task>
     <servers />
   </component>
