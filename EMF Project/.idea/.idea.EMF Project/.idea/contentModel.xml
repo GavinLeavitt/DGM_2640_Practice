@@ -12,7 +12,16 @@
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>
+          <e p="InputManager.cs" t="Include" />
           <e p="MagnetManager.cs" t="Include" />
+          <e p="Matching" t="Include">
+            <e p="IDBehavior.cs" t="Include" />
+            <e p="MatchID.cs" t="Include" />
+            <e p="MatchIDBehavior.cs" t="Include" />
+            <e p="NameID.cs" t="Include" />
+            <e p="WorkSystem.cs" t="Include" />
+            <e p="WorkSystemManager.cs" t="Include" />
+          </e>
           <e p="Player Scripts" t="Include">
             <e p="CCPushRigidbody.cs" t="Include" />
             <e p="Player States" t="Include">
@@ -21,6 +30,7 @@
             </e>
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="PointAtMouseBehavior.cs" t="Include" />
           <e p="RigidbodyPlayer" t="Include">
             <e p="RBAxisMoveState.cs" t="Include" />
             <e p="RBMoveInDirectionState.cs" t="Include" />

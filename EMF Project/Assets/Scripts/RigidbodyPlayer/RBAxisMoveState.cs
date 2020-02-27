@@ -23,7 +23,7 @@ public class RBAxisMoveState : IState
 		owner.moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
 		owner.moveDirection *= owner.speed;
 
-		// Move the controller
+		// Move the Rigidbody
 		owner.playerBody.MovePosition(owner.playerBody.position + owner.moveDirection*Time.deltaTime);
 
 		if (owner.magnetizeObj.thisBool)

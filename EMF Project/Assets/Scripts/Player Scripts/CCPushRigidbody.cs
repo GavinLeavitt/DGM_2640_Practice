@@ -5,9 +5,9 @@ using UnityEngine;
 public class CCPushRigidbody : MonoBehaviour {
 	public float pushSpeed = 2.0f;
 	// Push moveable blocks while Character Controller is moving
-	void OnControllerColliderHit(ControllerColliderHit hit)
+	private void OnControllerColliderHit(ControllerColliderHit hit)
 	{
-		Rigidbody body = hit.collider.attachedRigidbody;
+		var body = hit.collider.attachedRigidbody;
 
 		if (body == null || body.isKinematic)
 		{
@@ -24,7 +24,7 @@ public class CCPushRigidbody : MonoBehaviour {
 			return;
 		}
 
-		Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+		var pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 		body.velocity = pushDir * pushSpeed;
 	}
 }
