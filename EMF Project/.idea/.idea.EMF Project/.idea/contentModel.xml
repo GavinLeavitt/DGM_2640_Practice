@@ -15,9 +15,9 @@
           <e p="InputManager.cs" t="Include" />
           <e p="MagnetManager.cs" t="Include" />
           <e p="Matching" t="Include">
-            <e p="IDBehavior.cs" t="Include" />
+            <e p="IDBehaviour.cs" t="Include" />
             <e p="MatchID.cs" t="Include" />
-            <e p="MatchIDBehavior.cs" t="Include" />
+            <e p="MatchIDBehaviour.cs" t="Include" />
             <e p="NameID.cs" t="Include" />
             <e p="WorkSystem.cs" t="Include" />
             <e p="WorkSystemManager.cs" t="Include" />

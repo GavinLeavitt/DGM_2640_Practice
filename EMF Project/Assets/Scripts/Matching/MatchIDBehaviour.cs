@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MatchIdBehaviour : IdBehaviour
+public class MatchIDBehaviour : IDBehaviour
 {
     public WorkSystemManager workSystemManagerObj;
     private NameId otherIdObj;
    
     private void OnTriggerEnter(Collider other)
     {
-        otherIdObj = other.GetComponent<IdBehaviour>().nameIdObj;
+        otherIdObj = other.GetComponent<IDBehaviour>().nameIdObj;
         CheckId();
     }
 

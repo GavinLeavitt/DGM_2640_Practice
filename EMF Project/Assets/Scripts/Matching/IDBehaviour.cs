@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
 
-public class IdBehaviour : MonoBehaviour
+public class IDBehaviour : MonoBehaviour
 {
     public NameId nameIdObj;
 }
