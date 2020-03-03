@@ -39,6 +39,10 @@
           <e p="Scriptable Objects" t="Include">
             <e p="BoolData.cs" t="Include" />
             <e p="PositionData.cs" t="Include" />
+            <e p="StringListData.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="TextBehaviour.cs" t="Include" />
           </e>
         </e>
       </e>
