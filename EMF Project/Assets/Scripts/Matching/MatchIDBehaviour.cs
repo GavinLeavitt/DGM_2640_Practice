@@ -1,26 +1,62 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class MatchIDBehaviour : IDBehaviour
+public class MatchIdBehaviour : IdBehaviour
 {
-    public WorkSystemManager workSystemManagerObj;
+  
+    [Serializable]
+    public struct possibleMatch
+    {
+        public NameId nameIdObj;
+        public UnityEvent enterEvent;
+        public UnityEvent exitEvent;
+    }
+
+    public List<possibleMatch> nameIdList;
+    [SerializeField]
+    public Dictionary<NameId, UnityEvent> nameIdDictionary;
+   
+   
     private NameId otherIdObj;
    
     private void OnTriggerEnter(Collider other)
     {
-        otherIdObj = other.GetComponent<IDBehaviour>().nameIdObj;
-        CheckId();
+        var nameId = other.GetComponent<IdBehaviour>().nameIdObj;
+        if (nameId == null) return;
+      
+        otherIdObj = nameId;
+        EnterCheckId();
     }
 
-    private void CheckId()
+    private void OnTriggerExit(Collider other)
     {
-        foreach (var obj in workSystemManagerObj.workIdList)
+        var nameId = other.GetComponent<IdBehaviour>().nameIdObj;
+        if (nameId == null) return;
+
+        otherIdObj = nameId;
+        ExitCheckId();
+    }
+
+    private void EnterCheckId()
+    {
+        foreach (var obj in nameIdList)
         {
             if (otherIdObj == obj.nameIdObj)
             {
-                obj.workSystemObj.Work();
-                obj.workEvent.Invoke();
+                obj.enterEvent.Invoke();
+            }
+        }
+    }
+    
+    private void ExitCheckId()
+    {
+        foreach (var obj in nameIdList)
+        {
+            if (otherIdObj == obj.nameIdObj)
+            {
+                obj.exitEvent.Invoke();
             }
         }
     }

@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: PositiveChargeID
-  m_EditorClassIdentifier: Assembly-CSharp::NameId
+  m_Script: {fileID: 11500000, guid: f662ce31ea0767c4da2018a9bebeac03, type: 3}
+  m_Name: SwordWeapon
+  m_EditorClassIdentifier: 

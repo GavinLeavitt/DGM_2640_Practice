@@ -13,28 +13,30 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/MoveInDirectionState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElevatorBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/Player States/AxisMoveState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBAxisMoveState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/NameID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBMoveInDirectionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/PositionData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/WorkSystemManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/MatchIDBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/MatchIdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Finite State Machines/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/ab/e9821339/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/IDBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/WorkSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/IdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PointAtMouseBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TextBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MagnetManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElevatorBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Matching/NameId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectibles/WeaponCollectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectibles/Collection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectibles/Collectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC10DD4A-D9F3-4AA9-8E69-1E49A48C7111/ab/e9821339/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Scripts/CCPushRigidbody.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/StringListData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TextBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/02/85c0f80e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,10 +75,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/WorkSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/StringListData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/IDBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/MatchIDBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RigidbodyPlayer/RBPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectibles/Collectible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectibles/WeaponCollectible.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectibles/Collection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/IDBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/IdBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/MatchIDBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Matching/MatchIdBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -139,6 +147,7 @@
       <workItem from="1582827829934" duration="8171000" />
       <workItem from="1583258328457" duration="6009000" />
       <workItem from="1583434957286" duration="2170000" />
+      <workItem from="1583862714914" duration="6376000" />
     </task>
     <servers />
   </component>

@@ -1565,8 +1565,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1781744713f2cd44a8d4a1cb0b402241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: 51729917e4d5afe4b882b98796190025, type: 2}
-  workSystemManagerObj: {fileID: 0}
+  nameIdObj: {fileID: 11400000, guid: a002b8b7997af30409c192f7c238c7f0, type: 2}
+  nameIdList:
+  - nameIdObj: {fileID: 11400000, guid: b290ba4d861b4e3419d0b69b6c9a30ff, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    exitEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - nameIdObj: {fileID: 11400000, guid: 6de730ccd22d0ce43958f29d593f758b, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    exitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - nameIdObj: {fileID: 11400000, guid: af21e54079d571d44a7ef3e1436d4887, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    exitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - nameIdObj: {fileID: 11400000, guid: 7fb4b2121070518438eb5c23d7466108, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    exitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - nameIdObj: {fileID: 11400000, guid: a002b8b7997af30409c192f7c238c7f0, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    exitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &683797520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1929,7 @@ GameObject:
   - component: {fileID: 771838830}
   - component: {fileID: 771838829}
   - component: {fileID: 771838828}
+  - component: {fileID: 771838832}
   m_Layer: 0
   m_Name: Metal Girder
   m_TagString: HeavyMagnet
@@ -1931,6 +2009,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771838832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771838827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357326234f8d51a4493397f3e214b239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIdObj: {fileID: 11400000, guid: b290ba4d861b4e3419d0b69b6c9a30ff, type: 2}
 --- !u!1 &838548101
 GameObject:
   m_ObjectHideFlags: 0

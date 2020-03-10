@@ -7,6 +7,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Collectibles" t="Include">
+            <e p="Collectible.cs" t="Include" />
+            <e p="Collection.cs" t="Include" />
+            <e p="WeaponCollectible.cs" t="Include" />
+          </e>
           <e p="ElevatorBehaviour.cs" t="Include" />
           <e p="Finite State Machines" t="Include">
             <e p="IState.cs" t="Include" />
@@ -16,11 +21,8 @@
           <e p="MagnetManager.cs" t="Include" />
           <e p="Matching" t="Include">
             <e p="IDBehaviour.cs" t="Include" />
-            <e p="MatchID.cs" t="Include" />
             <e p="MatchIDBehaviour.cs" t="Include" />
             <e p="NameID.cs" t="Include" />
-            <e p="WorkSystem.cs" t="Include" />
-            <e p="WorkSystemManager.cs" t="Include" />
           </e>
           <e p="Player Scripts" t="Include">
             <e p="CCPushRigidbody.cs" t="Include" />
