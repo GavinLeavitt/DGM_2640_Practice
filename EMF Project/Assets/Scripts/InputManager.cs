@@ -5,10 +5,7 @@ using UnityEngine.Events;
 
 public class InputManager : MonoBehaviour
 {
-    public UnityEvent lmbInput;
-    public UnityEvent rmbInput;
-    public UnityEvent lmbDownInput;
-    public UnityEvent rmbDownInput;
+    public UnityEvent lmbInput, rmbInput, lmbDownInput, rmbDownInput;
 
     private void Update()
     {
