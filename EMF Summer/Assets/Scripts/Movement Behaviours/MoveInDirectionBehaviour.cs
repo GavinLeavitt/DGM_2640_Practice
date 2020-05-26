@@ -25,4 +25,16 @@ public class MoveInDirectionBehaviour : MonoBehaviour {
 			rigidbodyObj.MovePosition(rigidbodyObj.position + Time.deltaTime*speed*direction.vector3Value);
 		}
 	}
+
+	public void MoveAwayFromDirection(Vector3Data direction)
+	{
+		if (!useRangeCheck)
+		{
+			rigidbodyObj.MovePosition(rigidbodyObj.position - Time.deltaTime*speed*direction.vector3Value);
+		} 
+		else if (rangeCheck.value > 0)
+		{	
+			rigidbodyObj.MovePosition(rigidbodyObj.position - Time.deltaTime*speed*direction.vector3Value);
+		}
+	}
 }
