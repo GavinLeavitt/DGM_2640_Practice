@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23015619623343996}
   - component: {fileID: 65848166393632454}
   - component: {fileID: 54606067215257316}
+  - component: {fileID: 114781254054400152}
   - component: {fileID: 114772118451603320}
   - component: {fileID: 114454900343243638}
   - component: {fileID: 114937653421102828}
@@ -40,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1067402630375226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3, y: 1.15, z: 4.23}
+  m_LocalPosition: {x: 3.790586, y: 0.89, z: 0.3672697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,68 +136,9 @@ MonoBehaviour:
     workEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114772118451603320}
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    repeatEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    delayedEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - nameIdObj: {fileID: 11400000, guid: ba24f6246a27e1148bf7789b48710ecd, type: 2}
-    canRepeat: 0
-    repeatTime: 0
-    workEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114772118451603320}
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    repeatEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    delayedEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  triggerExitMatches:
-  - nameIdObj: {fileID: 11400000, guid: f3b0cf156978ed740a8dda92bcb10884, type: 2}
-    canRepeat: 0
-    repeatTime: 0
-    workEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114772118451603320}
-          m_MethodName: set_enabled
-          m_Mode: 6
+        - m_Target: {fileID: 54606067215257316}
+          m_MethodName: WakeUp
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -223,9 +165,68 @@ MonoBehaviour:
     workEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114772118451603320}
-          m_MethodName: set_enabled
-          m_Mode: 6
+        - m_Target: {fileID: 54606067215257316}
+          m_MethodName: WakeUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    repeatEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    delayedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  triggerExitMatches:
+  - nameIdObj: {fileID: 11400000, guid: f3b0cf156978ed740a8dda92bcb10884, type: 2}
+    canRepeat: 0
+    repeatTime: 0
+    workEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 54606067215257316}
+          m_MethodName: Sleep
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    repeatEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    delayedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - nameIdObj: {fileID: 11400000, guid: ba24f6246a27e1148bf7789b48710ecd, type: 2}
+    canRepeat: 0
+    repeatTime: 0
+    workEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 54606067215257316}
+          m_MethodName: Sleep
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -261,6 +262,33 @@ MonoBehaviour:
   speed: 5
   useRangeCheck: 0
   rangeCheck: {fileID: 0}
+--- !u!114 &114781254054400152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067402630375226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b432d21d8519024180cccbc7dc1b428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 54606067215257316}
+        m_MethodName: Sleep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114937653421102828
 MonoBehaviour:
   m_ObjectHideFlags: 1
