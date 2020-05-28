@@ -4,18 +4,16 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class MouseEventBehaviour : MonoBehaviour {
-	public UnityEvent lmbEvent, rmbEvent;
+	public UnityEvent mbEvent = new UnityEvent();
+	public int mouseButton = 0;
 
 	private void Update()
 	{
-		if (Input.GetMouseButton(0))
-		{
-			lmbEvent.Invoke();
-		}
+		if (mbEvent == null) return;
 
-		if (Input.GetMouseButton(1))
+		if (Input.GetMouseButton(mouseButton))
 		{
-			rmbEvent.Invoke();
+			mbEvent.Invoke();
 		}
 	}
 }

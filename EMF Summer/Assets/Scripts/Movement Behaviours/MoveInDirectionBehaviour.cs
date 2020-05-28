@@ -4,6 +4,7 @@
 public class MoveInDirectionBehaviour : MonoBehaviour {
 	public Rigidbody rigidbodyObj;
 	public float speed = 1.0f;
+	public bool canMove = false;
 	public bool useRangeCheck = false;
 	public IntData rangeCheck;
 
@@ -14,25 +15,24 @@ public class MoveInDirectionBehaviour : MonoBehaviour {
 
 	public void MoveInDirection(Vector3Data direction)
 	{
-		if (!useRangeCheck)
+		if (!useRangeCheck || rangeCheck.value > 0)
 		{
-			rigidbodyObj.MovePosition(rigidbodyObj.position + Time.deltaTime*speed*direction.vector3Value);
-		} 
-		else if (rangeCheck.value > 0)
-		{	
+			if (!canMove) return;
 			rigidbodyObj.MovePosition(rigidbodyObj.position + Time.deltaTime*speed*direction.vector3Value);
 		}
 	}
 
 	public void MoveAwayFromDirection(Vector3Data direction)
 	{
-		if (!useRangeCheck)
+		if (!useRangeCheck || rangeCheck.value > 0)
 		{
-			rigidbodyObj.MovePosition(rigidbodyObj.position - Time.deltaTime*speed*direction.vector3Value);
-		} 
-		else if (rangeCheck.value > 0)
-		{	
+			if (!canMove) return;
 			rigidbodyObj.MovePosition(rigidbodyObj.position - Time.deltaTime*speed*direction.vector3Value);
 		}
+	}
+
+	public void ToggleMove(bool isEnabled)
+	{
+		canMove = isEnabled;
 	}
 }

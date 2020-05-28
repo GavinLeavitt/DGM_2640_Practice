@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class MagnetObj : MonoBehaviour {
-	public float charge = 1.0f;
+public class MagnetObj {
+	public float charge;
 	public Rigidbody rigidbodyObj;
+
+	public MagnetObj()
+	{
+
+	}
 
 	public void ChangePolarity(float newPolarity)
 	{
