@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 65667428266507068}
   - component: {fileID: 114375005740813040}
   m_Layer: 0
-  m_Name: PlayerTrigger
+  m_Name: Player Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 65717366370999172}
   - component: {fileID: 114000505120994814}
   m_Layer: 0
-  m_Name: SafetyTrigger
+  m_Name: Safety Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,7 +406,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 3, z: 0.8}
+  m_Size: {x: 0.95, y: 3, z: 0.95}
   m_Center: {x: 0, y: -2, z: 0}
 --- !u!65 &65773680540515872
 BoxCollider:
