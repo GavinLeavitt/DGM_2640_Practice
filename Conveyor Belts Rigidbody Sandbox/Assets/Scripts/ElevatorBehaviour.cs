@@ -9,7 +9,9 @@ public class ElevatorBehaviour : MonoBehaviour
     public Transform[] destinationArray;
     public float speed = 1f;
     public Rigidbody rigidbodyObj;
-    private int destination = 0;
+    public int destination = 0;
+    public int startPoint = 0;
+    public int endPoint = 1;
 
     private void Start()
     {
@@ -17,48 +19,52 @@ public class ElevatorBehaviour : MonoBehaviour
         rigidbodyObj = GetComponent<Rigidbody>();
     }
 
-    public void MoveToNextDestination()
+    public void FixedUpdate()
     {
-        if (destination <= destinationArray.Length-1)
-        {
-            MoveTowardsPoint(destinationArray[destination].position, 1);
-        }
-
-        if (destination >= destinationArray.Length)
-        {
-            destination = 0;
-        }
+        MoveTowardsPoint(destinationArray[destination].position);
     }
 
-    public void MoveToPreviousDestination()
+    public void UpdateDestination(int newDestination)
     {
-        if (destination > 0)
-        {
-            MoveTowardsPoint(destinationArray[destination].position, -1);
-        }
-
-        if (destination <= 0)
-        {
-            destination = destinationArray.Length-1;
-        }
+        destination = newDestination;
     }
 
-    public void MoveToStartingPoint()
+    public void UpdateSpeed(float newSpeed)
     {
-        destination = 0;
-
-        MoveTowardsPoint(destinationArray[destination].position, 0);
+        speed = newSpeed;
+    }
+    
+    public void UpdateStartPoint(int newStart)
+    {
+        startPoint = newStart;
     }
 
-    public void MoveTowardsPoint(Vector3 target, int direction)
+    public void UpdateEndPoint(int newEnd)
     {
-        if (rigidbodyObj.position != target)
-        {
-            rigidbodyObj.MovePosition(Vector3.MoveTowards(rigidbodyObj.position, target, (speed/10)*Time.deltaTime));
-        }
-        else
-        {
-            destination += direction;
-        }
+        endPoint = newEnd;
+    }
+    
+    public void FlipDirection()
+    {
+        var newStart = endPoint;
+        var newEnd = startPoint;
+        startPoint = newStart;
+        endPoint = newEnd;
+    }
+
+    public void SetDestinationToStart()
+    {
+        destination = startPoint;
+    }
+
+    public void SetDestinationToEnd()
+    {
+        destination = endPoint;
+    }
+
+    public void MoveTowardsPoint(Vector3 target)
+    {
+        if (rigidbodyObj.position == target) return;
+        rigidbodyObj.MovePosition(Vector3.MoveTowards(rigidbodyObj.position, target, (speed/10)*Time.deltaTime));
     }
 }
