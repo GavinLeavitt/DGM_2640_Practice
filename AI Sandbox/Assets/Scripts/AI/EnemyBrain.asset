@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392b7c33c49e5bb4d925ac1c408879ec, type: 3}
   m_Name: EnemyBrain
   m_EditorClassIdentifier: 
-  aiBaseObj: {fileID: 11400000, guid: a6d9fa6dbf00bcd4e9b134e70e54a289, type: 2}
+  aiBaseObj: {fileID: 11400000, guid: a7ae608b925f5df42b6568cdf189a7bc, type: 2}

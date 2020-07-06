@@ -11,5 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2117d8fba37d78047896d0e57a11e8dd, type: 3}
   m_Name: EnemyPatrolPoints
   m_EditorClassIdentifier: 
-  vector3Datas: []
+  vector3Datas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   index: 0
