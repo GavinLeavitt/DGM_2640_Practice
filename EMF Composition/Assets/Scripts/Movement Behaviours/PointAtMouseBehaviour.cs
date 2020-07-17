@@ -6,6 +6,7 @@ using UnityEngine;
 public class PointAtMouseBehaviour : MonoBehaviour
 {
     public Transform activeTransform;
+    public float speed = 0.1f;
     
 	private void Awake()
 	{
@@ -27,7 +28,8 @@ public class PointAtMouseBehaviour : MonoBehaviour
         }
 
         var forward = mouseWorld - activeTransform.position;
-        activeTransform.rotation = Quaternion.LookRotation(forward, Vector3.up);
+        var dirTo = Quaternion.LookRotation(forward, Vector3.up);
+        activeTransform.rotation = Quaternion.Lerp(activeTransform.rotation, dirTo, speed * Time.deltaTime);
     }
 
     public void TransformSwap(Transform newTransform)

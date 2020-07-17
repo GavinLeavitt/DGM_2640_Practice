@@ -6,9 +6,9 @@ using UnityEngine;
 public class Vector3Data : ScriptableObject {
 	public Vector3 value;
 
-	public void UpdateVector(Vector3 newVector)
+	public void UpdateVector(Transform transformObj)
 	{
-		value = newVector;
+		value = transformObj.position;
 	}
 
 	public void UpdateVectorToTransformForward(Transform transform)

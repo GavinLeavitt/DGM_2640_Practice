@@ -8,6 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae99c3a815aafa848a2240a791d34732, type: 3}
-  m_Name: HuntPlayerAction
+  m_Script: {fileID: 11500000, guid: 258b164b33f44f64280b4c279259ffed, type: 3}
+  m_Name: FailsafeID
   m_EditorClassIdentifier: 

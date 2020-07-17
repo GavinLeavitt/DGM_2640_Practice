@@ -7,7 +7,8 @@ using UnityEngine.AI;
 public class AiHunt : AiBase
 {
 	public GameAction destinationAction;
-	[HideInInspector] public Transform destination;
+	//[HideInInspector] 
+	public Transform destination;
 
 	protected virtual void OnEnable()
 	{
@@ -17,6 +18,11 @@ public class AiHunt : AiBase
 	private void OnRaise(object obj)
 	{
 		destination = obj as Transform;
+	}
+
+	public void Clear()
+	{
+		destination = null;
 	}
 	
 	public override void RunAgent(NavMeshAgent agent)

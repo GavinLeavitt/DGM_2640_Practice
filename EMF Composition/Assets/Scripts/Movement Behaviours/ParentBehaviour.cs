@@ -33,4 +33,13 @@ public class ParentBehaviour : MonoBehaviour {
 	{
 		gameObj.transform.parent = null;
 	}
+
+	public void DropAllChildren(Vector3Data dropoffPoint)
+	{
+		foreach (Transform child in transform)
+		{
+			child.position = dropoffPoint.value;
+			child.parent = null;
+		}
+	}
 }
