@@ -17,9 +17,11 @@ public class MoveInDirectionBehaviour : MonoBehaviour {
 	{
 		if (!useRangeCheck || rangeCheck.value > 0)
 		{
-			if (!canMove) return;
 			rigidbodyObj.useGravity = false;
 			rigidbodyObj.MovePosition(rigidbodyObj.position + Time.deltaTime*speed*direction.value);
+		} else 
+		{
+			rigidbodyObj.useGravity = true;
 		}
 	}
 
@@ -27,9 +29,11 @@ public class MoveInDirectionBehaviour : MonoBehaviour {
 	{
 		if (!useRangeCheck || rangeCheck.value > 0)
 		{
-			if (!canMove) return;
 			rigidbodyObj.useGravity = false;
 			rigidbodyObj.MovePosition(rigidbodyObj.position - Time.deltaTime*speed*direction.value);
+		} else 
+		{
+			rigidbodyObj.useGravity = true;
 		}
 	}
 

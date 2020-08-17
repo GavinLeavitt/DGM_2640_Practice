@@ -45,7 +45,7 @@ public class MatchIdBehaviour : IdBehaviour
       otherIdObj = other.GetComponent<IdBehaviour>().nameIdObj;
       StartCoroutine(CheckId(otherIdObj, triggerEnterMatches));
    }
-   
+
    private void OnTriggerExit(Collider other)
    {
       if (other.GetComponent<IdBehaviour>() == null) return;

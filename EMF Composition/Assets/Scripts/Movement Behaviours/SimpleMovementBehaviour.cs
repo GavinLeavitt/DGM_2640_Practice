@@ -19,16 +19,8 @@ public class SimpleMovementBehaviour : MonoBehaviour {
 	{
 		var mouseCheck = 1.0f - Mathf.Abs(Input.GetAxis("Mouse Button Axis"));
 		var axisDirection = new Vector3(Input.GetAxis("Horizontal")*mouseCheck, 0.0f, Input.GetAxis("Vertical")*mouseCheck);
+		if ((Physics.gravity.y - bodyObj.velocity.y) > -7.2f) return;
 		bodyObj.MovePosition(bodyObj.position + axisDirection * moveSpeed * Time.deltaTime);
-		if (Input.GetAxis("Mouse Button Axis") != 0)
-		{
-			bodyObj.useGravity = false;
-		}
-		else
-		{
-			bodyObj.useGravity = true;
-		}
-			
 	}
 
 	public void MoveInDirection()
