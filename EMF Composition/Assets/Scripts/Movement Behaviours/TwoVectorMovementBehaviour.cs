@@ -27,6 +27,9 @@ public class TwoVectorMovementBehaviour : MonoBehaviour {
 		{
 			rigidbodyObj.useGravity = false;
 			rigidbodyObj.MovePosition(rigidbodyObj.position - (direction * Time.deltaTime * speed * posTargetVector.value));
+		} else
+		{
+			rigidbodyObj.useGravity = true;
 		}
 	}
 
@@ -36,6 +39,9 @@ public class TwoVectorMovementBehaviour : MonoBehaviour {
 		{
 			rigidbodyObj.useGravity = false;
 			rigidbodyObj.MovePosition(rigidbodyObj.position - (direction * Time.deltaTime * speed * negTargetVector.value));
+		} else
+		{
+			rigidbodyObj.useGravity = true;
 		}
 	}
 
